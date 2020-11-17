@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>JD Sweep - Pay Online</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    {% load static %}
+
+    <link type="text/css" rel="stylesheet" href="{% static 'main/css/main.css' %}" />
+    <link type="text/css" rel="stylesheet" href="{% static 'main/css/gallery.css' %}" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+            <a href="/" style="width: 140px; margin-top: 20px;"><img id="logosweep" src="static/main/images/jdss_logo_3.png" alt="jd logo"
+                style="width: 140px; margin-top: 55px; margin-left: 10px;"></a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutus">About us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/quote">Get a quote</a></li>
+            <li><a href="/pay">Pay Online</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Heading -->
+    <div id="heading"
+        style="background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url(static/main/images/banner.jpg);">
+        <h1>Pay Online</h1>
+    </div>
+
+    <!-- Main -->
+    <section id="main" class="wrapper" style="background-image: linear-gradient(rgba(255,255,255,.90),rgba(65, 81, 123, 0.8)), url(static/main/images/bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            ;
+            ">
+        <div class="inner" style="opacity: .65;">
+            <div class="content">
+                <header>
+                    <h3>Thank you! We have received your payment</h3>
+                    
+                    <p>Here is your receipt:</p>
+                    <p>
+                        Name: <br>
+                        Card ending in: <br>
+                        Invoice #:  <br>
+                        Amount:  <br>
+                        Created on:  <br>
+                    </p>
+                    <h3><a href="/">Go Home</a></h3>
+                </header>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3>Keeping the streets clean</h3>
+                    <p>Don't settle for less. Jack Davenport Sweeping Services has been succesful because of great work
+                        and integrity that spans over 4 decades of hard work and dedication.
+                        We guarantee all our work and provide a great value while maintaining first-class service and
+                        performance.
+                    </p>
+                </section>
+                <section>
+                    <h4>Helpful Links</h4>
+                    <ul class="alt">
+                        <li><a href="/aboutus">About us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/quote">Get a quote</a></li>
+                        <li><a href="/pay">Pay online</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/contact">Contact us</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Social</h4>
+                    <ul class="plain">
+                        <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                        <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                        <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                        <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="copyright">
+                &copy; Lance Wade
+            </div>
+        </div>
+        
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="{% static 'main/js/jquery.min.js' %}"></script>
+    <script src="{% static 'main/js/browser.min.js' %}"></script>
+    <script src="{% static 'main/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'main/js/util.js' %}"></script>
+    <script src="{% static 'main/js/main.js' %}"></script>
+
+</body>
+
+</html>

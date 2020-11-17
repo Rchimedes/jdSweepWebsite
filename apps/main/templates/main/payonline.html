@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>JD Sweep - Pay Online</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    {% load static %}
+
+    <link type="text/css" rel="stylesheet" href="{% static 'main/css/main.css' %}" />
+    <link type="text/css" rel="stylesheet" href="{% static 'main/css/gallery.css' %}" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+            <a href="/" style="width: 140px; margin-top: 20px;"><img id="logosweep" src="static/main/images/jdss_logo_3.png" alt="jd logo"
+                style="width: 140px; margin-top: 55px; margin-left: 10px;"></a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutus">About us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/quote">Get a quote</a></li>
+            <li><a href="/pay">Pay Online</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Heading -->
+    <div id="heading"
+        style="background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url(static/main/images/banner.jpg);">
+        <h1>Pay Online</h1>
+    </div>
+
+    <!-- Main -->
+    <section id="main" class="wrapper" style="background-image: linear-gradient(rgba(255,255,255,.90),rgba(65, 81, 123, 0.8)), url(static/main/images/bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            ;
+            ">
+        <div class="inner" style="opacity: .65;">
+            <div class="content">
+                <header>
+                    <h3>Make a payment</h3>
+                    
+                    <p>Please enter the information below</p>
+                    <p>
+                        <form action="/processpayment" method="POST">
+                            {% csrf_token %}
+                            <div class="row gtr-uniform">
+                                    <div class="col-6 col-12-xsmall">
+                                        <label>Card Number</label>
+                                        <input type="text" name="first_name" id="card" placeholder="0000-0000-0000-0000" />
+                                    </div>
+                                    <div class="col-6 col-12-xsmall">
+                                        <label>Name on card</label>
+                                        <input type="text" name="first_name" id="first_name" placeholder="First Name" />
+                                    </div>
+                                    <div class="col-3 col-12-xsmall">
+                                        <label>Expiration month</label>
+                                        <select name="month" id="month">
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="01">03</option>
+                                                <option value="01">04</option>
+                                                <option value="01">05</option>
+                                                <option value="01">06</option>
+                                                <option value="01">07</option>
+                                                <option value="01">08</option>
+                                                <option value="01">09</option>
+                                                <option value="01">10</option>
+                                                <option value="01">11</option>
+                                                <option value="01">12</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="col-3 col-12-xsmall">
+                                            <label>Expiration year</label>
+                                            <select name="year" id="year">
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2024">2024</option>
+                                                    
+                                            </select>
+                                    </div>
+                                    <p>
+                                        We accept all major types of payment! <br>
+                                        <img src="static/main/images/paymentpic.png" alt="">
+                                    </p>
+                                    
+                                    <div class="col-12">
+                                        <ul class="actions">
+                                            <li><input type="submit" value="Make Payment" class="primary" /></li>
+                                            <li><input type="reset" value="Clear Form" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </form>
+                    </p>
+                    <br>
+                    <br>
+                    <h3><a href="/">Home</a></h3>
+                </header>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <div class="content">
+                <section>
+                    <h3>Keeping the streets clean</h3>
+                    <p>Don't settle for less. Jack Davenport Sweeping Services has been succesful because of great work
+                        and integrity that spans over 4 decades of hard work and dedication.
+                        We guarantee all our work and provide a great value while maintaining first-class service and
+                        performance.
+                    </p>
+                </section>
+                <section>
+                    <h4>Helpful Links</h4>
+                    <ul class="alt">
+                        <li><a href="/aboutus">About us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/quote">Get a quote</a></li>
+                        <li><a href="/pay">Pay online</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/contact">Contact us</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Social</h4>
+                    <ul class="plain">
+                        <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                        <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                        <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                        <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="copyright">
+                &copy; Lance Wade
+            </div>
+        </div>
+        
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="{% static 'main/js/jquery.min.js' %}"></script>
+    <script src="{% static 'main/js/browser.min.js' %}"></script>
+    <script src="{% static 'main/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'main/js/util.js' %}"></script>
+    <script src="{% static 'main/js/main.js' %}"></script>
+
+</body>
+
+</html>
